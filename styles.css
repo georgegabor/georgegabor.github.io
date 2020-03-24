@@ -5,27 +5,14 @@
 /* @import '@angular/material/prebuilt-themes/purple-green.css'; */
 
 /* Global Styles */
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
-h2,
-h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
+
 body {
   height: 100%;
   margin: 2em;
   background-color: lightgray;
 }
 
-a {
-  cursor: pointer;
-  cursor: hand;
-}
+
 .msg {
   text-align: center;
 }
@@ -56,111 +43,19 @@ form {
   cursor: hand;
 }
 
-button:disabled {
-  background-color: #eee;
-  color: #aaa;
-  cursor: auto;
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
-.mat-list-item {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-right: 10px;
-  margin-top: 10px;
-  display: flexbox;
-}
-.mat-list-item:hover {
-  /* background-color: #2f3435; */
-  background-color: rgb(143, 200, 202);
 
-  /* transform: scale(1.15); */
-  /* -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  -ms-transition: all .4s;
-  transition: all .4s; */
-}
 
-.mat-list-item.active {
-  box-shadow: 4px 2px 0px 0px #154951;
-  /* transform: scale(1.15); */
-}
-.nav-link {
-  text-decoration: none;
-  color: white;
-}
-.nav-link:hover {
-  color: #bcd4d7;
-  transform: scale(1.05);
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -o-transition: all .4s;
-  -ms-transition: all .4s;
-  transition: all .4s;
-}
 
-/* everywhere else */
-/* {
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
-/* .mat-table .mat-cell button {
-  margin: 0.5em;
-} */
-
-#title {
-  margin-left: 2em;
-  padding: 0.1em;
-}
-
-form {
-  justify-content: center;
-  width: 30%;
-  margin-top: 3em;
-  box-shadow: 0 12px 12px #817b7b;
-  background-color: #e2e2e2;
-  position: absolute;
-  right: 35%;
-}
-
-.mat-card-content {
-  justify-content: center;
-  margin-left: 0em;
-  margin-right: 0em;
-}
-
-.mat-form-field {
-  width: 90%;
-  margin: 0.5em;
-}
-
-.successMessage {
-  background-color: rgb(109, 138, 65);
-  color: white;
-}
-
-.errorMessage {
-  background-color: rgb(161, 56, 56);
-  color: white;
-}
-
-.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
-  border-color: #1b5e67;
-}
-
-.mat-radio-button.mat-accent .mat-radio-inner-circle {
-  color: #1b5e67;
-  background-color: #1b5e67;
-}
-
-.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
-  background-color: #1b5e67;
-}
-
-::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
-  color: #1b5e67 !important;
-}
-
-::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
-  background-color: #1b5e67 !important;
-}
