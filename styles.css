@@ -35,7 +35,9 @@ label {
 p {
   font-weight: bold;
 }
-
+#htmlform {
+  text-align: center;
+}
 #longitude {
 }
 #latitude {
