@@ -35,7 +35,7 @@ label {
 p {
   font-weight: bold;
 }
-#htmlform {
+form {
   text-align: center;
 }
 #longitude {
@@ -113,7 +113,7 @@ button:disabled {
   padding: 0.1em;
 }
 
-#form {
+form {
   justify-content: center;
   width: 30%;
   margin-top: 3em;
