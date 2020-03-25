@@ -4,69 +4,92 @@
     <meta charset="utf-8" />
     <title>Calculate Coordinates</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-<body>
-<div class="form">
-<form id="htmlform" >
-<table width="auto">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">POI Longitude *</label>
- </td>
- <td valign="top">
-  <input  type="text" id="longitude" maxlength="50" size="30">
- </td>
-</tr>
 
-<tr>
- <td valign="top">
-  <label for="last_name">POI Latitude *</label>
- </td>
- <td valign="top">
-  <input  type="text" id="latitude" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Distance in meters</label>
- </td>
- <td valign="top">
-  <input  type="text" id="distance" maxlength="80" size="30">
- </td>
+  <body>
 
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Number of Waypoints</label>
- </td>
- <td valign="top">
-  <input  type="text" id="waypoints" maxlength="30" size="30">
- </td>
-</tr>
+    <div class="header" id="myHeader">
+      <h2>Drone Coordinates Calculator</h2>
+    </div>
 
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="button" id="button" onclick="calc()" value="Submit">
- </td>
-</tr>
-</table>
-</form>
-</div>
+    <form id="htmlform" >
+      <table>
+      </tr>
+      <tr>
+       <td valign="top">
+        <label for="longitude">POI Longitude *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" id="longitude" maxlength="50" size="30">
+       </td>
+      </tr>
 
-<div class="msg">
-  <p id="long"></p>
-  <p id="lat"></p>
-  <p id="dist"></p>
-  <p id="wpoints"></p>
-  <div class="innermsg">
-    <p id="ps"></p>
-  </div>
-</div>
+      <tr>
+       <td valign="top">
+        <label for="latitude">POI Latitude *</label>
+       </td>
+       <td valign="top">
+        <input  type="text" id="latitude" maxlength="50" size="30">
+       </td>
+      </tr>
 
-<script src="coordinates.js"></script>
+      <tr>
+       <td valign="top">
+        <label for="distance">Distance in meters</label>
+       </td>
+       <td valign="top">
+        <input  type="text" id="distance" maxlength="80" size="30">
+       </td>
+      </tr>
 
-</body>
+      <tr>
+       <td valign="top">
+        <label for="waypoints">Number of Waypoints</label>
+       </td>
+       <td valign="top">
+        <input  type="text" id="waypoints" maxlength="30" size="30">
+       </td>
+      </tr>
+
+      <tr>
+       <td valign="top">
+        <label for="filename">Filename ( without '.txt' postfix )</label>
+       </td>
+       <td valign="top">
+        <input  type="text" id="filename" maxlength="30" size="30">
+       </td>
+      </tr>
+
+      <tr>
+       <td colspan="2" style="text-align:center">
+        <input type="button" id="button" onclick="calc()" value="Submit">
+       </td>
+      </tr>
+      </table>
+    </form>
+
+    <div class="msg">
+      <p id="long"></p>
+      <p id="lat"></p>
+      <p id="dist"></p>
+      <p id="wpoints"></p>
+      <p id="fname"></p>
+      <div class="innermsg">
+        <p id="ps"></p>
+      </div>
+    </div>
+
+    <script src="coordinates.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
 </html>

@@ -1,29 +1,45 @@
 /* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 /* @import '@angular/material/prebuilt-themes/deeppurple-amber.css'; */
-/* @import '@angular/material/prebuilt-themes/indigo-pink.css';*/
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 /* @import '@angular/material/prebuilt-themes/pink-bluegrey.css'; */
 /* @import '@angular/material/prebuilt-themes/purple-green.css'; */
 
 /* Global Styles */
-
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2,
+h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
 body {
   height: 100%;
   margin: 2em;
   background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+label,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-
+a {
+  cursor: pointer;
+  cursor: hand;
+}
 .msg {
   text-align: center;
 }
-label {
-  font-weight: bold;
-}
-p {
-  font-weight: bold;
-}
-form {
-  text-align: center;
+
+#htmlform {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 #longitude {
 }
@@ -35,27 +51,37 @@ form {
 }
 #button {
   font-family: Arial;
-  background-color: #eee;
+  color: white;
+  background-color: #555;
   border: none;
+  margin-top: 1em;
+  margin-bottom: : 1em;
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
   cursor: hand;
 }
 
-div.form
-{
-    display: block;
-    text-align: center;
-}
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+/* Style the header */
+.header {
+  padding: 10px 16px;
+  background: #555;
+  text-align: center;
 }
 
+/* Page content */
+.content {
+  padding: 16px;
+}
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
-
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  /* padding-top: 102px; */
+}
