@@ -16,7 +16,7 @@
       <h2>Drone Coordinates Calculator</h2>
     </div>
 
-    <form id="htmlform" >
+    <form id="htmlform" name="htmlform">
       <table>
       </tr>
       <tr>
@@ -24,7 +24,7 @@
         <label for="longitude">POI Longitude *</label>
        </td>
        <td valign="top">
-        <input  type="text" id="longitude" maxlength="50" size="30">
+        <input  type="text" id="longitude" maxlength="50" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -33,7 +33,7 @@
         <label for="latitude">POI Latitude *</label>
        </td>
        <td valign="top">
-        <input  type="text" id="latitude" maxlength="50" size="30">
+        <input  type="text" id="latitude" maxlength="50" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -42,7 +42,7 @@
         <label for="distance">Distance in meters</label>
        </td>
        <td valign="top">
-        <input  type="text" id="distance" maxlength="80" size="30">
+        <input  type="text" id="distance" maxlength="80" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -51,7 +51,7 @@
         <label for="waypoints">Number of Waypoints</label>
        </td>
        <td valign="top">
-        <input  type="text" id="waypoints" maxlength="30" size="30">
+        <input  type="text" id="waypoints" maxlength="30" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -60,13 +60,13 @@
         <label for="filename">Filename ( without '.txt' postfix )</label>
        </td>
        <td valign="top">
-        <input  type="text" id="filename" maxlength="30" size="30">
+        <input  type="text" id="filename" maxlength="30" size="30" required aria-required="true">
        </td>
       </tr>
 
       <tr>
        <td colspan="2" style="text-align:center">
-        <input type="button" id="button" onclick="calc()" value="Submit">
+        <input type="submit" id="button" value="Submit">
        </td>
       </tr>
       </table>

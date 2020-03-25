@@ -1,3 +1,12 @@
+
+const form = document.getElementById('htmlform');
+
+form.addEventListener('submit', function (event) {
+  calc();
+  // Then we prevent the form from being sent by canceling the event
+  event.preventDefault();
+});
+
 function calc() {
   let longitude = document.getElementById('longitude');
   let latitude = document.getElementById('latitude');
@@ -11,5 +20,4 @@ function calc() {
   document.getElementById('wpoints').innerHTML = "Waypoints = " + waypoints.value;
   document.getElementById('fname').innerHTML = "Filename = " + filename.value.concat('.txt');
   document.getElementById('ps').innerHTML = "P.S.: Már csak a kalkuláció hiányzik :-) <br> Hajrá Dia !";
-
 }
