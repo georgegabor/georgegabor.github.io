@@ -2,7 +2,7 @@
 <htmllang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Calculate Coordinates</title>
+    <title>Drone Orbit Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,7 +13,7 @@
   <body>
 
     <div class="header" id="myHeader">
-      <h2>Drone Coordinates Calculator</h2>
+      <h2>Drone Orbit Calculator</h2>
     </div>
 
     <form id="htmlform" name="htmlform">
@@ -24,7 +24,7 @@
         <label for="longitude">POI Longitude</label>
        </td>
        <td valign="top">
-        <input  type="text" id="longitude" maxlength="50" size="30" required aria-required="true">
+        <input  type="number" id="longitude" maxlength="50" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -33,7 +33,7 @@
         <label for="latitude">POI Latitude</label>
        </td>
        <td valign="top">
-        <input  type="text" id="latitude" maxlength="50" size="30" required aria-required="true">
+        <input  type="number" id="latitude" maxlength="50" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -42,7 +42,7 @@
         <label for="distance">Distance in meters</label>
        </td>
        <td valign="top">
-        <input  type="text" id="distance" maxlength="80" size="30" required aria-required="true">
+        <input  type="number" id="distance" maxlength="80" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -51,7 +51,7 @@
         <label for="waypoints">Number of Waypoints</label>
        </td>
        <td valign="top">
-        <input  type="text" id="waypoints" maxlength="30" size="30" required aria-required="true">
+        <input  type="number" id="waypoints" maxlength="30" size="30" required aria-required="true">
        </td>
       </tr>
 
