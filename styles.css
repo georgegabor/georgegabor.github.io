@@ -5,11 +5,11 @@
 /* @import '@angular/material/prebuilt-themes/purple-green.css'; */
 
 /* Global Styles */
-h1 {
+/* h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
-}
+} */
 h2,
 h3 {
   color: white;
@@ -19,9 +19,15 @@ h3 {
 body {
   height: 100%;
   margin: 2em;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   display: flex;
   justify-content: center;
+  background-image: url('drone.jpeg');
+  /* background-color: inherit; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 label,
 p {
@@ -34,7 +40,9 @@ a {
   cursor: hand;
 }
 .msg {
-  text-align: center;
+  position: fixed;
+  top: 15em;
+  left: 1em;
 }
 
 #htmlform {
@@ -63,16 +71,16 @@ a {
 }
 
 /* Style the header */
-.header {
+/* .header {
   padding: 10px 16px;
   background: #555;
   text-align: center;
-}
+} */
 
 /* Page content */
-.content {
+/* .content {
   padding: 16px;
-}
+} */
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -85,3 +93,46 @@ a {
 .sticky + .content {
   /* padding-top: 102px; */
 }
+
+.title {
+	font-family: "Montserrat";
+	text-align: left;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+	letter-spacing: 1px;
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+/* styling my button */
+
+/* .white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+} */

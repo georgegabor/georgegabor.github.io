@@ -12,9 +12,8 @@
 
   <body>
 
-    <div class="header" id="myHeader">
-      <h2>Drone Orbit Calculator</h2>
-    </div>
+    <div class="title" >
+      <h1>Drone Orbit Calculator</h1>
 
     <form id="htmlform" name="htmlform">
       <table>
@@ -24,7 +23,7 @@
         <label for="longitude">POI Longitude</label>
        </td>
        <td valign="top">
-        <input  type="number" id="longitude" maxlength="50" size="30" required aria-required="true">
+        <input  type="number" step="any" id="longitude" maxlength="50" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -33,7 +32,7 @@
         <label for="latitude">POI Latitude</label>
        </td>
        <td valign="top">
-        <input  type="number" id="latitude" maxlength="50" size="30" required aria-required="true">
+        <input  type="number" step="any" id="latitude" maxlength="50" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -42,7 +41,7 @@
         <label for="distance">Distance in meters</label>
        </td>
        <td valign="top">
-        <input  type="number" id="distance" maxlength="80" size="30" required aria-required="true">
+        <input  type="number" step="any" id="distance" maxlength="80" size="30" required aria-required="true">
        </td>
       </tr>
 
@@ -51,16 +50,16 @@
         <label for="waypoints">Number of Waypoints</label>
        </td>
        <td valign="top">
-        <input  type="number" id="waypoints" maxlength="30" size="30" required aria-required="true">
+        <input  type="number" step="any" id="waypoints" maxlength="30" size="30" required aria-required="true">
        </td>
       </tr>
 
       <tr>
        <td valign="top">
-        <label for="filename">Filename (without '.txt' postfix)</label>
+        <label for="filename">Filename (without '.txt' postfix) </label>
        </td>
        <td valign="top">
-        <input  type="text" id="filename" maxlength="30" size="30" required aria-required="true">
+        <input  type="text" id="filename" maxlength="20" size="20" required aria-required="true">
        </td>
       </tr>
 
@@ -71,6 +70,7 @@
       </tr>
       </table>
     </form>
+  </div>
 
     <div class="msg">
       <p id="long"></p>
