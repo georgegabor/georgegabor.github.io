@@ -22,14 +22,6 @@
       <form id="htmlform" name="htmlform">
         <table>
         </tr>
-        <tr>
-         <td valign="top">
-          <label for="longitude">POI Longitude in degrees</label>
-         </td>
-         <td valign="top">
-          <input  type="number" step="any" id="longitude" maxlength="50" size="30" required aria-required="true" placeholder="e.g. 36.954635">
-         </td>
-        </tr>
 
         <tr>
          <td valign="top">
@@ -39,6 +31,15 @@
           <input  type="number" step="any" id="latitude" maxlength="50" size="30" required aria-required="true" placeholder="e.g. 27.566675">
          </td>
         </tr>
+
+        <tr>
+          <td valign="top">
+           <label for="longitude">POI Longitude in degrees</label>
+          </td>
+          <td valign="top">
+           <input  type="number" step="any" id="longitude" maxlength="50" size="30" required aria-required="true" placeholder="e.g. 36.954635">
+          </td>
+         </tr>
 
         <tr>
          <td valign="top">
@@ -77,24 +78,13 @@
     </div>
   </div>
 
-    <div class="msg">
-      <p id="long"></p>
-      <p id="lat"></p>
-      <p id="dist"></p>
-      <p id="wpoints"></p>
-      <p id="fname"></p>
-      <div class="innermsg">
-        <p id="ps"></p>
-      </div>
-    </div>
-
-    <script src="coordinates.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="coordinates.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
 </html>
